@@ -1,0 +1,15 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: "ecommsuite"
+spec:
+  template:
+    spec:
+      containers:
+      - image: "gcr.io/ecommsuite/jib-image"
+        name: "ecommsuite"
+        ports:
+        - containerPort: 8080
+          name: http1
+          protocol: TCP
+

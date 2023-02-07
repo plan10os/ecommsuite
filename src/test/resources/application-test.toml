@@ -1,0 +1,5 @@
+jpa.default.properties.hibernate.connection.url = 'jdbc:tc:mariadb:10:///db'
+
+[datasources.default]
+url = 'jdbc:tc:mariadb:10:///db'
+driver-class-name = 'org.testcontainers.jdbc.ContainerDatabaseDriver'
